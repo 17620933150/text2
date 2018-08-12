@@ -1,0 +1,86 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:89:"E:\phpStudy\PHPTutorial\WWW\local.shop.com\public/../application/admin\view\auth\upd.html";i:1533120199;}*/ ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <link href="<?php echo config('admin_static'); ?>/css/style.css" rel="stylesheet" type="text/css" />
+    <script language="JavaScript" src="<?php echo config('admin_static'); ?>/js/jquery.js"></script>
+    <style>
+    .active {
+        border-bottom: solid 3px #66c9f3;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="place">
+        <span>位置：</span>
+        <ul class="placeul">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">表单</a></li>
+        </ul>
+    </div>
+    <div class="formbody">
+        <div class="formtitle">
+            <span class="active">基本信息</span>
+        </div>
+        <form action="<?php echo url('/user/add'); ?>" method="post">
+            <input name="auth_id" value="<?php echo $auth['auth_id']; ?>" type="hidden" />
+            <ul class="forminfo">
+                <li>
+                    <label>权限名称</label>
+                    <input name="auth_name" placeholder="请输入权限名称" value="<?php echo $auth['auth_name']; ?>" type="text" class="dfinput" /><i></i>
+                </li>
+                <li>
+                    <label>父级权限</label>
+                    <select name="pid" class="dfinput">
+                        <?php if(is_array($auths) || $auths instanceof \think\Collection || $auths instanceof \think\Paginator): if( count($auths)==0 ) : echo "" ;else: foreach($auths as $key=>$auth_v): ?>
+                        <option value="<?php echo $auth_v['auth_id']; ?>"><?php echo str_repeat('&nbsp;',$auth_v['level']*3); ?><?php echo $auth_v['auth_name']; ?></option>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                    </select>
+                </li>
+                <li>
+                    <label>控制名</label>
+                    <input name="auth_c" value="<?php echo $auth['auth_c']; ?>" placeholder="顶级权限不填" type="text" class="dfinput" /><i></i>
+                </li>
+                <li>
+                    <label>方法名</label>
+                    <input name="auth_a" value="<?php echo $auth['auth_a']; ?>" placeholder="顶级权限不填" type="text" class="dfinput" /><i></i>
+                </li>
+                <li>
+                    <label>&nbsp;</label>
+                    <input name="" id="btnSubmit" type="submit" class="btn" value="确认保存" />
+                </li>
+        </form>
+    </div>
+</body>
+<script>
+$(".formtitle span").click(function(event) {
+    $(this).addClass('active').siblings("span").removeClass('active');
+    var index = $(this).index();
+    $("ul.forminfo").eq(index).show().siblings(".forminfo").hide();
+});
+$(".formtitle span").eq(0).click();
+</script>
+<script>
+//权限父权限默认选中
+//alert("<?php echo $auth['pid']; ?>")
+$("select[name='pid']").val("<?php echo $auth['pid']; ?>");
+//给name=pid的select元素绑定change事件
+$("select[name='pid']").on('change', function() {
+    var auth_id = $(this).val();
+    //如果顶级权限(auth_id=0)
+    if (auth_id == 1) {
+        //让两个input不可用
+        $("input[name='auth_c'],input[name='auth_a']").prop('disabled', true).val('');
+    } else {
+        $("input[name='auth_c'],input[name='auth_a']").prop('disabled', false);
+    }
+});
+//自执行change事件
+$("select[name='pid']").change();
+</script>
+
+</html>

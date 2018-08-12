@@ -1,0 +1,414 @@
+---------------------------------------------------------------
+[ 2018-08-03T09:15:57+08:00 ] 127.0.0.1 GET /type/upd/type_id/1.html
+[ info ] local.shop1.com/type/upd/type_id/1.html [运行时间：2.057630s][吞吐率：0.49req/s] [内存消耗：2,179.05kb] [文件加载：53]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'type',
+    2 => 'upd',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1530705920; PHPSESSID=uufj8vnktdlkjhfnm5u7htvff4',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.shop1.com/type/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'local.shop1.com',
+)
+[ info ] [ PARAM ] array (
+  '/type/upd/type_id/1_html' => '',
+  'type_id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\TypeController->upd[ E:\phpStudy\PHPTutorial\WWW\local.shop.com\application\admin\controller\TypeController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\public/../application/admin\view\type\upd.html [ array (
+  0 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095531s ] mysql:host=127.0.0.1;port=3306;dbname=shop1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_type` [ RunTime:0.097433s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_type` LIMIT 1 [ RunTime:0.009223s ]
+---------------------------------------------------------------
+[ 2018-08-03T09:15:57+08:00 ] 127.0.0.1 GET /admin
+[ info ] local.shop1.com/admin [运行时间：0.216346s][吞吐率：4.62req/s] [内存消耗：1,306.12kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1530705920; PHPSESSID=uufj8vnktdlkjhfnm5u7htvff4',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'local.shop1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ E:\phpStudy\PHPTutorial\WWW\local.shop.com\application\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-03T09:16:00+08:00 ] 127.0.0.1 GET /admin
+[ info ] local.shop1.com/admin [运行时间：0.057898s][吞吐率：17.27req/s] [内存消耗：1,306.12kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1530705920; PHPSESSID=uufj8vnktdlkjhfnm5u7htvff4',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'local.shop1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ E:\phpStudy\PHPTutorial\WWW\local.shop.com\application\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-03T09:16:01+08:00 ] 127.0.0.1 GET /admin/top
+[ info ] local.shop1.com/admin/top [运行时间：0.276791s][吞吐率：3.61req/s] [内存消耗：1,354.40kb] [文件加载：45]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'top',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1530705920; PHPSESSID=uufj8vnktdlkjhfnm5u7htvff4',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.shop1.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'local.shop1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/top' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\IndexController->top[ E:\phpStudy\PHPTutorial\WWW\local.shop.com\application\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\public/../application/admin\view\index\top.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-03T09:16:02+08:00 ] 127.0.0.1 GET /admin/left
+[ info ] local.shop1.com/admin/left [运行时间：0.097423s][吞吐率：10.26req/s] [内存消耗：1,354.41kb] [文件加载：45]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'left',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1530705920; PHPSESSID=uufj8vnktdlkjhfnm5u7htvff4',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.shop1.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'local.shop1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/left' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\IndexController->left[ E:\phpStudy\PHPTutorial\WWW\local.shop.com\application\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\public/../application/admin\view\index\left.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-03T09:16:04+08:00 ] 127.0.0.1 GET /admin/main
+[ info ] local.shop1.com/admin/main [运行时间：0.086459s][吞吐率：11.57req/s] [内存消耗：1,306.70kb] [文件加载：44]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1530705920; PHPSESSID=uufj8vnktdlkjhfnm5u7htvff4',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.shop1.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'local.shop1.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/main' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\IndexController->main[ E:\phpStudy\PHPTutorial\WWW\local.shop.com\application\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\public/../application/admin\view\index\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-03T09:16:06+08:00 ] 127.0.0.1 GET /user/add.html
+[ info ] local.shop1.com/user/add.html [运行时间：0.269121s][吞吐率：3.72req/s] [内存消耗：2,268.48kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'add',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1530705920; PHPSESSID=uufj8vnktdlkjhfnm5u7htvff4',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.shop1.com/admin/left',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'local.shop1.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/add_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\UserController->add[ E:\phpStudy\PHPTutorial\WWW\local.shop.com\application\admin\controller\UserController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\public/../application/admin\view\user\add.html [ array (
+  0 => 'roles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004090s ] mysql:host=127.0.0.1;port=3306;dbname=shop1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_role` [ RunTime:0.026235s ]
+[ sql ] [ SQL ] SELECT * FROM `sh_role` [ RunTime:0.000620s ]
+---------------------------------------------------------------
+[ 2018-08-03T09:16:11+08:00 ] 127.0.0.1 GET /user/index.html
+[ info ] local.shop1.com/user/index.html [运行时间：0.265497s][吞吐率：3.77req/s] [内存消耗：2,340.79kb] [文件加载：57]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1530705920; PHPSESSID=uufj8vnktdlkjhfnm5u7htvff4',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.shop1.com/admin/left',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'local.shop1.com',
+)
+[ info ] [ PARAM ] array (
+  '/user/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\UserController->index[ E:\phpStudy\PHPTutorial\WWW\local.shop.com\application\admin\controller\UserController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\public/../application/admin\view\user\index.html [ array (
+  0 => 'users',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005294s ] mysql:host=127.0.0.1;port=3306;dbname=shop1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sh_user` [ RunTime:0.028071s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sh_user` `t1` LEFT JOIN `sh_role` `t2` ON `t1`.`role_id`=`t2`.`role_id` LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT `t1`.*,`t2`.`role_name` FROM `sh_user` `t1` LEFT JOIN `sh_role` `t2` ON `t1`.`role_id`=`t2`.`role_id` LIMIT 0,2 [ RunTime:0.000358s ]
+---------------------------------------------------------------
+[ 2018-08-03T09:16:14+08:00 ] 127.0.0.1 GET /role/index.html
+[ info ] local.shop1.com/role/index.html [运行时间：0.445551s][吞吐率：2.24req/s] [内存消耗：1,663.65kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'role',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1530705920; PHPSESSID=uufj8vnktdlkjhfnm5u7htvff4',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.shop1.com/admin/left',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'local.shop1.com',
+)
+[ info ] [ PARAM ] array (
+  '/role/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\RoleController->index[ E:\phpStudy\PHPTutorial\WWW\local.shop.com\application\admin\controller\RoleController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\public/../application/admin\view\role\index.html [ array (
+  0 => 'roles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005610s ] mysql:host=127.0.0.1;port=3306;dbname=shop1;charset=utf8
+[ sql ] [ SQL ] select t1.*, group_concat(t2.auth_name) as all_auth from sh_role t1 left join sh_auth t2 on find_in_set(t2.auth_id,t1.auth_ids_list) group by t1.role_id [ RunTime:0.090456s ]
+---------------------------------------------------------------
+[ 2018-08-03T09:16:35+08:00 ] 127.0.0.1 GET /role/index.html
+[ info ] local.shop1.com/role/index.html [运行时间：0.038432s][吞吐率：26.02req/s] [内存消耗：1,543.77kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'role',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1530705920; PHPSESSID=uufj8vnktdlkjhfnm5u7htvff4',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://local.shop1.com/admin/left',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'local.shop1.com',
+)
+[ info ] [ PARAM ] array (
+  '/role/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\RoleController->index[ E:\phpStudy\PHPTutorial\WWW\local.shop.com\application\admin\controller\RoleController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\local.shop.com\public/../application/admin\view\role\index.html [ array (
+  0 => 'roles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003252s ] mysql:host=127.0.0.1;port=3306;dbname=shop1;charset=utf8
+[ sql ] [ SQL ] select t1.*, group_concat(t2.auth_name) as all_auth from sh_role t1 left join sh_auth t2 on find_in_set(t2.auth_id,t1.auth_ids_list) group by t1.role_id [ RunTime:0.000594s ]
